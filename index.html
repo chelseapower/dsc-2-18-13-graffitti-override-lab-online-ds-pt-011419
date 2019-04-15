@@ -11,13 +11,20 @@
 <body>
   <div id="wall">
     <div class="tag-1"></div>
-    <div id="tag-2"></div>
-    <div id="tag-3" class="slick wicked"></div>
-    <div class="parent">
-      <div id="tag-4"></div>
+<div class="parent">
+    <div id="tag-4"></div>
     </div>
     <div class="parent">
       <div id="tag-5" class="slick"></div>
+      <p>#wall .parent #tag-5.slick {<br>
+        display: none;<br>
+        }</p>
+      <p>#wall .parent :last-child #tag-6 {<br>
+        display: none;<br>
+        }</p>
+      <p>body #wall .parent &gt; #tag-7.slick {<br>
+        display: none;<br>
+        }</p>
     </div>
     <div class="parent">
       <div></div>
